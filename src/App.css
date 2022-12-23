@@ -1,38 +1,117 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faeab1;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  height: 550px;
+  overflow-y: scroll;
+  background-color: black;
+  border-radius: 10px;
+  background-color: #e5ba73;
+  box-shadow: 15px 15px 10px #c58940;
+}
+
+.mainHeading h1 {
+  text-align: center;
+  margin: 3px;
+}
+
+hr {
+  width: 100%;
+  margin: auto;
+  border: 1px solid #faf8f1;
+}
+
+.subHeading {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1, h2 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-box {
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8em;
+  width: 20em;
+  height: 2.5em;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.input input {
+  width: 100%;
+  height: 2.5em;
+  border: none;
+  outline: none;
+}
+
+.app i {
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 900;
+  color: grey;
+  margin-right: 5px;
+}
+.todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.todo {
+  margin-top: 0.8em;
+  width: 20em;
+  min-height: 2.5em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.left p {
+  margin-left: 3px;
+  font-size: medium;
+  font-weight: 700;
+  font-style: normal;
+  color: grey;
+}
+
+.editing-input input {
+  width: 150%;
+  height: 2.5em;
+  outline: none;
+  border: none;
+  margin-left: 10px;
 }
